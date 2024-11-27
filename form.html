@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        form{
+            color: white;
+            background-color: rgb(0, 0, 0);
+            padding: 50px;
+            border-radius: 10px;
+            width: 25%;
+            height: 30vh;
+        }
+        label{
+            font-size: 25px;
+        }
+        input{
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 10px;
+            border: none;
+            font-size: 17px;
+            outline: none;
+        }
+        #submit{
+            margin-top: 30px;
+            background-color: green;
+            color: white;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Login Form !</h1>
+        <form action="">
+        <label for="email">Enter Your Email Address:</label><br>
+        <input type="email" name="email" id="email" required><br><br>
+        <label for="password">Enter Your Password:</label><br>
+        <input type="password" name="password" id="password" required><br><br>
+        <input id="submit" type="submit">
+    </form>
+    </div>
+
+    <script>
+        let h1=document.querySelector("h1");
+        let form=document.querySelector("form");
+        let submit=document.getElementById("submit");
+        let email=document.getElementById("email");
+        let password=document.getElementById("password");
+        
+        submit.addEventListener("click",(e)=>{
+            e.preventDefault();
+            if(password.value!=="" && email.value!==""){
+                form.style.display="none";
+                h1.style.color="black";
+                h1.innerText="Form Was Submitted Successfuly";
+            }else{
+                h1.innerText="Username or password should not be empty";
+                h1.style.color="red";
+            }
+        })
+    </script>
+</body>
+</html>

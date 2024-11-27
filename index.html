@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      nav {
+        background-color: black;
+        padding: 12px;
+        display: flex;
+        justify-content: space-around;
+      }
+      nav > ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+      }
+      nav > div > a {
+        color: white;
+      }
+      li > a {
+        text-decoration: none;
+        color: white;
+        margin: 20px;
+        font-size: 20px;
+      }
+      li > a:hover {
+        color: red;
+        cursor: pointer;
+      }
+      .container {
+        display: flex;
+        margin-top: 100px;
+        padding: 100px;
+      }
+      .detail {
+        margin-top: 20px;
+        width: 50%;
+      }
+      .detail > p {
+        margin-top: 20px;
+        font-size: 20px;
+      }
+      .profile-pic {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+      }
+      .profile-pic > img {
+        width: 50%;
+      }
+      h1 {
+        font-size: 50px;
+      }
+      h1 > span {
+        color: chocolate;
+      }
+      .btn {
+        border-radius: 10px;
+        border: none;
+        padding: 10px;
+        width: 100px;
+        margin-top: 20px;
+        margin-right: 50px;
+        color: white;
+      }
+      .btn:hover {
+        cursor: pointer;
+      }
+      .hire {
+        background-color: green;
+      }
+      .exp {
+        background-color: chocolate;
+      }
+      footer {
+        position: absolute;
+        bottom: 10px;
+        box-sizing: border-box;
+        width: 100%;
+        font-size: 20px;
+        display: flex;
+        padding: 0 100px;
+        justify-content: space-between;
+      }
+      .footer > div {
+        display: flex;
+      }
+      .logo {
+        height: 30px;
+        margin-right: 10px;
+      }
+      .logo:hover {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">Services</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="detail">
+        <h1>
+          Hi ! <br />
+          I am <span>Web Developer</span>
+        </h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo
+          neque, placeat cum officiis molestiae voluptate nam beatae repudiandae
+          quam eius officia ducimus porro ut molestias? Quae accusamus labore
+          non, nisi optio quod porro consequuntur libero debitis ipsam
+          doloribus, numquam consequatur pariatur eius similique ratione
+          quibusdam eligendi cum odit distinctio laudantium.
+        </p>
+        <button class="btn hire">Hire Me</button>
+        <button class="btn exp">Experience</button>
+      </div>
+      <div class="profile-pic">
+        <img
+          src="https://flyerwiz.app/profile-picture-maker/assets/image/male.png"
+          alt=""
+        />
+      </div>
+    </div>
+    <footer>
+      Web Developer copyright &copy; www.ghanshyamyadav.com
+      <div class="logo-container">
+        <img
+          src="https://download.logo.wine/logo/Instagram/Instagram-Logo.wine.png"
+          alt=""
+          class="logo"
+        />
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtBILdC5ouxGYjeaYJPmVqMsSpsItocXSI5A&s"
+          alt=""
+          class="logo"
+        />
+        <img
+          src="https://icon2.cleanpng.com/20240119/ta/transparent-x-logo-logo-brand-identity-company-organization-black-background-white-x-logo-for-1710915881389.webp"
+          alt=""
+          class="logo"
+        />
+      </div>
+    </footer>
+  </body>
+</html>
